@@ -8,4 +8,12 @@ spring:
           uri: https://github.com/Randika-Lakmal-Abeyrathna/cloud-config-server
 
 server:
-  port: 9999
+  port: 9191
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
